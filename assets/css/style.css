@@ -98,7 +98,7 @@ body {
     width: 349px;
     background-color: #13B0F5;
     border-radius: 50%;
-    background-image: url('../img/pb.png');
+    background-image: url('../img/pb.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -128,7 +128,7 @@ body {
 }
 
 .about-me-content h1 {
-    font-size: 100px;
+    font-size: 70px;
     font-family: 'Poppins', sans-serif;
     color: var(--text-primary);
     padding: 40px 0 0 0;
