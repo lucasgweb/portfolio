@@ -353,7 +353,7 @@ footer {
     align-items: center;
 }
 
-.footer-content {
+.footer-content ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -364,6 +364,7 @@ footer {
     display: flex;
     gap: 54px;
     height: 100%;
+    justify-content: center;
     
 }
 
@@ -525,6 +526,11 @@ footer {
         padding: 10px;
     }
 
+    .footer-content nav {
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-content span a {
         font-size: 14px;
 
@@ -532,12 +538,14 @@ footer {
 
     footer{
         height: auto;
+ 
         text-align: center;
     }
 
     .footer-content ul {
         justify-content: center;
         flex-direction: column;
+        text-align: center;
     }
 
     .nav-links {
