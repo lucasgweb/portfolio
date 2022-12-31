@@ -572,6 +572,9 @@ footer {
 
 @media screen and (max-width: 480px) {
 
+    .container {
+        width: 80%;
+    }
     .about-me-content h1 {
         font-size: 40px;
         line-height: 45px;
