@@ -45,14 +45,16 @@ body {
     display: flex;
     gap: 52px;
     color: var(--text-primary);
+    flex-shrink: 0;
 }
 
 .nav-links a {
     color: var(--text-secondary);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: normal;
     line-height: 26px;
+    
 }
 
 .nav-icons {
@@ -100,6 +102,8 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    float: right;
+    flex-shrink: 0;
 }
 
 
@@ -113,6 +117,7 @@ body {
     left: -8px;
     z-index: -1;
     border-radius: inherit;
+    
 }
 
 .about-me-content {
@@ -123,13 +128,14 @@ body {
 }
 
 .about-me-content h1 {
-    font-size: 58px;
+    font-size: 100px;
     font-family: 'Poppins', sans-serif;
     color: var(--text-primary);
     padding: 40px 0 0 0;
-    line-height: 70px;
+    line-height: 90px;
     font-weight: 700;
     letter-spacing: -1px;
+
 }
 
 .about-me-content span {
@@ -424,31 +430,6 @@ footer {
         width: 400px;
         margin-top: 20px;
     }
-
-    .footer-content {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .footer-content p {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .footer-content span a {
-        font-size: 14px;
-
-    }
-
-    footer{
-        height: auto;
-        text-align: center;
-    }
-
-    .footer-content ul {
-        justify-content: center;
-        flex-direction: column;
-    }
    
 }
 
@@ -535,7 +516,29 @@ footer {
         font-size: 18px;
     }
 
+    .footer-content {
+        justify-content: center;
+    }
 
+    .footer-content p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .footer-content span a {
+        font-size: 14px;
+
+    }
+
+    footer{
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-content ul {
+        justify-content: center;
+        flex-direction: column;
+    }
 
     .nav-links {
         display: none;

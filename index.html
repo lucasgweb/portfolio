@@ -48,7 +48,7 @@
                     <li><a class="link-mobile" href="#about-me">Sobre mim</a></li>
                     <li><a class="link-mobile" href="#stacks">Stacks</a></li>
                     <li><a class="link-mobile" href="#projects">Projetos</a></li>
-                    <li><a  class="link-mobile" href="#contact">Contato</a></li>
+                    <li><a class="link-mobile" href="#contact">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -238,7 +238,7 @@
             <hr>
         </div>
     </main>
-   
+
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -258,20 +258,17 @@
     </footer>
     <script src="assets/js/jquery.js"></script>
     <script>
-        $(".btn-navbar").click(function () {
-            $(".navbar-mobile").css("display", "block")
-            $(".photo-rounded").css("display", "none")
-        })
 
-        $(".btn-close").click(function () {
-            $(".navbar-mobile").css("display", "none")
-            $(".photo-rounded").css("display", "block")
-        })
+        $('.btn-navbar').on('click', function () {
+            $(".photo-rounded").css("display", "none");
+            $('.navbar-mobile').slideToggle(1.4);
+            
+        });
 
-        $(".link-mobile").click(function () {
-            $(".navbar-mobile").css("display", "none")
+        $('.navbar-mobile').click(function () {
             $(".photo-rounded").css("display", "block")
-        })
+            $(this).hide();
+        });
     </script>
 
 
